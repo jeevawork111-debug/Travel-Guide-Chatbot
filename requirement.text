@@ -1,9 +1,0 @@
-streamlit
-groq
-langchain
-langchain-community
-faiss-cpu
-sentence-transformers
-pandas
-pypdf
-Pillow
