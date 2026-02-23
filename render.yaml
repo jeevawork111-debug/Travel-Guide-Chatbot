@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: travel-guide-chatbot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run travel_guide_chatbot.py --server.port $PORT --server.address 0.0.0.0
