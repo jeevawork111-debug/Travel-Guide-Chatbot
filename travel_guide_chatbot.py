@@ -19,7 +19,7 @@ docs = []
 
 # Load CSV safely
 try:
-    csv_loader = CSVLoader(file_path="data/travel.csv")
+    csv_loader = CSVLoader(file_path="travel.csv")
     csv_docs = csv_loader.load()
     docs.extend(csv_docs)
     print("CSV loaded ✅")
@@ -28,7 +28,7 @@ except Exception as e:
 
 # Load PDF safely (IMPORTANT)
 try:
-    pdf_loader = PyPDFLoader("data/travel.pdf")
+    pdf_loader = PyPDFLoader("travel.pdf")
     pdf_docs = pdf_loader.load()
     docs.extend(pdf_docs)
     print("PDF loaded ✅")
@@ -653,3 +653,4 @@ st.markdown("""
     </p>
 </div>
 """, unsafe_allow_html=True)
+
